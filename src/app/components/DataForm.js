@@ -33,7 +33,7 @@ const DataForm = ({ onProgress, onReturn }) => {
                 {...field}
                 type="text"
                 id="name"
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-onyx rounded"
               />
             )}
           />
@@ -57,7 +57,7 @@ const DataForm = ({ onProgress, onReturn }) => {
                 {...field}
                 type="email"
                 id="email"
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-onyx rounded"
               />
             )}
           />
@@ -75,7 +75,7 @@ const DataForm = ({ onProgress, onReturn }) => {
                 {...field}
                 type="date"
                 id="dob"
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-onyx rounded"
               />
             )}
           />
@@ -93,7 +93,7 @@ const DataForm = ({ onProgress, onReturn }) => {
                 {...field}
                 type="time"
                 id="time"
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-onyx rounded"
               />
             )}
           />
@@ -111,7 +111,7 @@ const DataForm = ({ onProgress, onReturn }) => {
                 {...field}
                 type="text"
                 id="place"
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-onyx rounded"
               />
             )}
           />
@@ -127,7 +127,7 @@ const DataForm = ({ onProgress, onReturn }) => {
         </div>
       </form>
 
-      <div className="text-red-500 mt-4">
+      <div>
         {Object.keys(errors).length > 0 && (
           <p>🛑 Please fill out all required fields: {Object.keys(errors).join(', ')}</p>
         )}
