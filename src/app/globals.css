@@ -1,27 +1,102 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
 }
-
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+h1{
+  font-family: 'Handlee', cursive;
+  font-weight: medium;
+  font-size: 82px;
+  @apply text-onyx-100 hover:scale-105 transition-transform transform;
+}
+h2{
+  font-family: 'Handlee', cursive;
+  font-weight: medium;
+  font-size: 41px;
+  @apply text-onyx-100 hover:scale-105 transition-transform transform;
+
+}
+button{
+  font-family: 'Handlee', cursive;
+  font-weight: medium;
+  font-size: 41px;
+  @apply border-2 border-onyx-100 py-3 px-6 rounded-md hover:scale-105 transition-transform transform flex flex-col justify-center items-center text-onyx-100;
+}
+h3{
+  font-family: 'Handlee', cursive;
+  font-weight: medium;
+  font-size: 36px;
+}
+p{
+  font-family: 'Handlee', cursive;
+  font-weight: medium;
+  font-size: 22px;
+}
+body{
+  font-family: 'Handlee', cursive;
+  @apply bg-apricot-800;
+}
+.background-paper{
+  background-image: '/paper.jpg';
 }
