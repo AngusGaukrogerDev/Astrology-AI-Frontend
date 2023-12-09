@@ -87,11 +87,21 @@ h3{
   font-family: 'Handlee', cursive;
   font-weight: medium;
   font-size: 36px;
+  @apply text-onyx-100 hover:scale-105 transition-transform transform;
 }
 p{
   font-family: 'Handlee', cursive;
   font-weight: medium;
   font-size: 22px;
+  @apply text-onyx-100 hover:scale-105 transition-transform transform;
+
+}
+label{
+  font-family: 'Handlee', cursive;
+  font-weight: medium;
+  font-size: 18px;
+  @apply text-onyx-100 hover:scale-105 transition-transform transform;
+
 }
 body{
   font-family: 'Handlee', cursive;
