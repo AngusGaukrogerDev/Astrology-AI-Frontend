@@ -15,6 +15,7 @@ const OpenAIResponse = () => {
       };
         return(
             <div className="w-full h-screen flex flex-col justify-center items-center">
+                
                 <button onClick={handleGetReading}>Get Reading</button>
 
                 <h2>
