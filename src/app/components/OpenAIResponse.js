@@ -1,6 +1,4 @@
 'use client'
-import axios from 'axios';
-import GetDataButton from './GetDataButton';
 import { useState } from 'react';
 
 const OpenAIResponse = () => {
