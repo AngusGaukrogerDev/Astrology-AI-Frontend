@@ -93,7 +93,7 @@ p{
   font-family: 'Handlee', cursive;
   font-weight: medium;
   font-size: 22px;
-  @apply text-onyx-100 hover:scale-105 transition-transform transform;
+  @apply text-onyx-100 ;
 
 }
 label{
@@ -102,6 +102,12 @@ label{
   font-size: 18px;
   @apply text-onyx-100 hover:scale-105 transition-transform transform;
 
+}
+span{
+  font-family: 'Handlee', cursive;
+  font-weight: medium;
+  font-size: 22px;
+  @apply text-onyx-100 hover:scale-105 transition-transform transform;
 }
 body{
   font-family: 'Handlee', cursive;
